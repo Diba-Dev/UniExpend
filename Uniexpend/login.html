@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+  
+  <div class="cotn_principal">
+    <div class="cont_centrar">
+  
+      <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+            <div class="cont_ba_opcitiy">
+              <h2>LOGIN</h2>
+              <p>Login to access blog features.</p>
+              <button class="btn_login" onclick="change_to_login()">LOGIN</button>
+            </div>
+          </div>
+  
+          <div class="col_md_sign_up">
+            <div class="cont_ba_opcitiy">
+              <h2>SIGN UP</h2>
+              <p>Create a new account.</p>
+              <button class="btn_sign_up" onclick="change_to_sign_up()">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="cont_back_info">
+          <div class="cont_img_back_grey">
+            <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg" alt="" />
+          </div>
+        </div>
+  
+        <div class="cont_forms">
+          <div class="cont_img_back_">
+            <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg" alt="" />
+          </div>
+  
+          <!-- Login Form -->
+          <div class="cont_form_login">
+            <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>LOGIN</h2>
+            <form action="login.php" method="POST">
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <button class="btn_login" type="submit">LOGIN</button>
+            </form>
+          </div>
+  
+          <!-- Signup Form -->
+          <div class="cont_form_sign_up">
+            <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>SIGN UP</h2>
+            <form action="register.php" method="POST" id="signupForm">
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="text" name="username" placeholder="Username" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+                <button class="btn_sign_up" type="submit">SIGN UP</button>
+            </form>                           
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  <script src="login.js"></script>
+  </body>
+  
